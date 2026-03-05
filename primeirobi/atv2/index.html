@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formulario Simples</title>
+</head>
+
+<body>
+    <h1>Página de Cadastro</h1>
+    <form>
+        <fieldset>
+            <legend>Crie sua Conta</legend>
+            <br>
+            <label for="nome">Digite seu Nome:</label>
+            <br>
+            <input type="text" maxlength="15" id="nome" required>
+            <br><br>
+            <label for="eml" >Digite seu E-mail:</label>
+            <br>
+            <input placeholder="seuemail@dominio.com" type="email" required id="eml">
+            <br><br>
+            <label for="pw">Digite sua Senha(Mínimo 8 caracteres):</label>
+            <br>
+            <input type="password" minlength="8" maxlength="25" required id="pw">
+            <br><br>
+            <b>Selecione seu Gênero:</b>
+            <br>
+            <input type="radio" id="fem" name="genero" value="F">
+            <label for="fem"> Feminino</label>
+            <br>
+            <input type="radio" id="masc" name="genero" value="M">
+            <label for="masc">Masculino</label>
+            <br><br>
+            <b>Sua Biografia:</b>
+            <br>
+            <textarea placeholder="Conte mais sobre você." rows="15" cols="45"></textarea>
+            <br><br>
+            <input type="checkbox" required id="termos">
+            <label for="termos">Eu li e aceito os Termos de Usuário.</label>
+            <br><br>
+        </fieldset>
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+    </form>
+</body>
+
+</html>
