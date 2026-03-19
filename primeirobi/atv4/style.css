@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+    padding: 20px;
+    background-color: #b9f9be;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+aside {
+    grid-area: aside;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+main,
+aside,
+footer {
+    background-color: rgb(220, 255, 221);
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #000000;
+}
+
+header {
+    grid-area: header;
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #12eb27;
+    border-radius: 8px;
+    box-shadow: 10px 10px #0000003a;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+main h2 {
+    margin-bottom: 20px;
+}
+
+main p {
+    line-height: 1.8;
+}
+
+main time {
+    font-size: 12px;
+    color: #666;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(220, 255, 221);
+    padding: 25px;
+    border-radius: 8px;
+    list-style: none;
+
+}
+
+aside ul {
+    list-style: none;
+    margin-top: 15px;
+}
+
+aside li {
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+aside li :hover {
+    color: #000000;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin-top: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #12eb27;
+    box-shadow: 10px 10px #0000003a;
+    border: none;
+}
+
+figure {
+    position: relative;
+    display: inline-block;
+    width: 60%;
+    margin: 15px auto;
+    display: block;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+figcaption {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    body {
+        grid-template-areas:
+            "header"
+            "main"
+            "aside"
+            "footer";
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,61 @@
+html {
+    background-color: #e4fbfb;
+}
+
+.relative {
+    height: 200px;
+    width: 300px;
+    overflow-x: scroll;
+    background-color: #8a2be2;
+    position: relative;  
+}
+
+.absolute {
+    height: 200px;
+    width: 300px;
+    margin-top: 250px;
+    background-color: #d1e709;
+    position: absolute;
+    z-index: 1;   
+}
+.absolute-1 {
+    height: 200px;
+    width: 200px;
+    margin-left: 310px;
+    background-color: #0de70d;
+    position: absolute; 
+    border-radius: 50%;  
+    opacity: 50%;
+    box-shadow: 10px 10px rgb(242, 6, 6);
+}
+
+
+.fixed {
+    height: 80px;
+    width: 100px;
+    background-color: #e70d97;
+    position: fixed; 
+    bottom: 0;
+    right: 0;  
+}
+
+.exemplo-width {
+    height: 180px;
+    max-width: 200px;
+    background-color: #470de7;  
+    display: inline-block;
+    transition: width 2s;   
+}
+
+.exemplo-width:hover{
+    width: 680px;  
+}
+
+.exemplo-rem {
+    font-size: 2rem;
+}
+
+.exemplo-px {
+    font-size: 32px;
+}
+
