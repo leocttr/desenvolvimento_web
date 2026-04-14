@@ -16,11 +16,10 @@ function addTask() {
             <button class="remove-btn">Remover</button>
         `;
         list.appendChild(li);
-        input.value = ""; 
-        input.focus();    
+        input.value = "";
+        input.focus();
     }
 }
-
 
 btn.addEventListener('click', addTask);
 
